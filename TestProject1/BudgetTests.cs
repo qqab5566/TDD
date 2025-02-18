@@ -100,4 +100,19 @@ public class BudgetServiceTests
         Assert.That(actual, Is.EqualTo(3000));
     }
     
+    [Test]
+    public void query_with_no_budget_amount()
+    {
+        var budgetReport = Substitute.For<IBudgetReport>();
+
+        budgetReport.GetAll().Returns(new List<Budget>
+        {
+            new Budget { YearMonth = "202505", Amount = 31000m }
+        });
+        
+        _budgetService = new BudgetService(budgetReport);
+        var actual = _budgetService.Query(new DateTime(2025, 04, 01), new DateTime(2025, 04, 05));
+
+        Assert.That(actual, Is.EqualTo(0));
+    }
 }

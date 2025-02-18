@@ -11,13 +11,13 @@ public class BudgetService
 
     public decimal Query(DateTime start, DateTime end)
     {
-        if (start > end)
+        if (CheckDateRange(start, end))
         {
             return 0;
         }
 
         var budgets = _budgetReport.GetAll();
-        decimal totalAmount = 0;
+        var totalAmount = 0m;
 
         foreach (var budget in budgets)
         {
@@ -45,6 +45,10 @@ public class BudgetService
 
         return totalAmount;
     }
+    
+
+    private bool CheckDateRange(DateTime start, DateTime end)
+        => start > end;
 }
 
 public class Budget

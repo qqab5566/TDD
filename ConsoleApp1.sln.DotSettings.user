@@ -8,6 +8,8 @@
     &lt;TestId&gt;NUnit3x::07BE2ED5-0DCE-4644-B9CE-300CC97A3502::net6.0::TestProject1.BudgetServiceTests.query_partial_months&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::07BE2ED5-0DCE-4644-B9CE-300CC97A3502::net6.0::TestProject1.BudgetServiceTests.query_full_months&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::07BE2ED5-0DCE-4644-B9CE-300CC97A3502::net6.0::TestProject1.BudgetServiceTests.query_cross_months&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::07BE2ED5-0DCE-4644-B9CE-300CC97A3502::net6.0::TestProject1.BudgetServiceTests.query_witn_no_budget_amount&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::07BE2ED5-0DCE-4644-B9CE-300CC97A3502::net6.0::TestProject1.BudgetServiceTests.query_with_no_budget_amount&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d621a49_002D0bdb_002D4f4c_002D9fa2_002D0069a8721bb2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="invalid_date_range" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
