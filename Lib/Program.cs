@@ -1,6 +1,6 @@
 ﻿
 
-using ConsoleApp1;
+/*using ConsoleApp1;
 
 class Program
 {
@@ -35,4 +35,4 @@ class Program
             }
         }
     }
-}
+}*/

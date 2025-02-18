@@ -13,7 +13,7 @@ public class BudgetService
     {
         if (start > end)
         {
-            return 0m;
+            return 0;
         }
 
         var budgets = _budgetReport.GetAll();
