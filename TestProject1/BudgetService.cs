@@ -2,11 +2,11 @@ namespace ConsoleApp1;
 
 public class BudgetService
 {
-    private readonly IBudgetReport _budgetReport;
+    private readonly IBudgetRepo _budgetRepo;
 
-    public BudgetService(IBudgetReport budgetReport)
+    public BudgetService(IBudgetRepo budgetRepo)
     {
-        _budgetReport = budgetReport;
+        _budgetRepo = budgetRepo;
     }
 
     public decimal Query(DateTime start, DateTime end)
@@ -16,7 +16,7 @@ public class BudgetService
             return 0;
         }
 
-        var budgets = _budgetReport.GetAll();
+        var budgets = _budgetRepo.GetAll();
         var totalAmount = 0m;
 
         foreach (var budget in budgets)
@@ -57,7 +57,7 @@ public class Budget
     public decimal Amount { get; set; }   // 該月的總預算金額
 }
 
-public interface IBudgetReport
+public interface IBudgetRepo
 {
     public IEnumerable<Budget> GetAll();
 }
